@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Undangan Nikah</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Reset default styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Raleway', sans-serif;
+            background-color: #fff4e6;
+            overflow-x: hidden;
+        }
+
+        /* Header section */
+        .header {
+            text-align: center;
+            padding: 100px 0;
+            background-color: #fff;
+            position: relative;
+        }
+
+        .header h1 {
+            font-family: 'Sacramento', cursive;
+            font-size: 4em;
+            color: #333;
+            animation: fadeInDown 2s ease-in-out;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #555;
+            animation: fadeInUp 2s ease-in-out;
+        }
+
+        /* Animation for fadeInDown and fadeInUp */
+        @keyframes fadeInDown {
+            0% { opacity: 0; transform: translateY(-50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Couple Images Section */
+        .couple-images {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 50px 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .couple-images img {
+            border-radius: 50%;
+            border: 5px solid #ff8c00;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .couple-images img:hover {
+            transform: scale(1.1);
+        }
+
+        .couple-images div {
+            text-align: center;
+        }
+
+        .couple-images h3 {
+            font-size: 1.5em;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        /* Event Details Section */
+        .event-details {
+            background-color: #ff8c00;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+            animation: fadeInUp 2s ease-in-out;
+        }
+
+        .event-details h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .event-details p {
+            font-size: 1.2em;
+        }
+
+        /* RSVP Section */
+        .rsvp {
+            text-align: center;
+            padding: 50px 0;
+            animation: fadeInDown 2s ease-in-out;
+        }
+
+        .rsvp h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .rsvp form {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .rsvp input, .rsvp button {
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .rsvp input {
+            width: 200px;
+        }
+
+        .rsvp button {
+            background-color: #ff8c00;
+            color: white;
+            cursor: pointer;
+        }
+
+        .rsvp button:hover {
+            background-color: #e07b00;
+        }
+
+        /* Footer Section */
+        .footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .footer i {
+            margin: 0 10px;
+            font-size: 1.5em;
+            transition: color 0.3s ease;
+        }
+
+        .footer i:hover {
+            color: #ff8c00;
+        }
+
+        /* Media Query for Responsiveness */
+        @media only screen and (max-width: 768px) {
+            .couple-images {
+                flex-direction: column;
+            }
+
+            .couple-images img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .event-details h2 {
+                font-size: 2em;
+            }
+
+            .rsvp input {
+                width: 150px;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .header h1 {
+                font-size: 3em;
+            }
+
+            .couple-images img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .event-details h2 {
+                font-size: 1.8em;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <section class="header">
+        <h1 class="animate__animated animate__fadeInDown">Undangan Pernikahan</h1>
+        <p class="animate__animated animate__fadeInUp">Dengan penuh suka cita, kami mengundang Anda untuk hadir dalam acara pernikahan kami</p>
+    </section>
+
+    <!-- Couple Images -->
+    <section class="couple-images">
+        <div>
+            <img src="https://via.placeholder.com/200" alt="Foto Pengantin Pria">
+            <h3>Nama Pria</h3>
+        </div>
+        <div>
+            <img src="https://via.placeholder.com/200" alt="Foto Pengantin Wanita">
+            <h3>Nama Wanita</h3>
+        </div>
+    </section>
+
+    <!-- Event Details -->
+    <section class="event-details">
+        <h2>Rincian Acara</h2>
+        <p>Tanggal: 1 Januari 2025</p>
+        <p>Waktu: 10:00 AM - 02:00 PM</p>
+        <p>Lokasi: Jalan Contoh No.123, Jakarta</p>
+    </section>
+
+    <!-- RSVP Section -->
+    <section class="rsvp">
+        <h2>RSVP</h2>
+        <form>
+            <input type="text" placeholder="Nama Anda" required>
+            <input type="email" placeholder="Email Anda" required>
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <p>&copy; 2025 Pernikahan Nama Pria & Nama Wanita</p>
+        <div>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </section>
+
+    <!-- JavaScript (for interactivity) -->
+    <script>
+        // RSVP Form submission
+        const rsvpForm = document.querySelector('.rsvp form');
+        rsvpForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            alert('Terima kasih telah mengonfirmasi kehadiran Anda!');
+        });
+    </script>
+</body>
+</html>
